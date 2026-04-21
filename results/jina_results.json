@@ -1,0 +1,26 @@
+[
+  {
+    "test": "douyin_short",
+    "status": 200,
+    "time": 17.3,
+    "content_len": 159,
+    "preview": "Title: \n\nURL Source: https://v.douyin.com/i2wyU53P/\n\nWarning: This page maybe not yet fully loaded, consider explicitly specify a timeout.\n\nMarkdown Content:\n\n",
+    "success": true
+  },
+  {
+    "test": "douyin_share",
+    "status": 200,
+    "time": 17.2,
+    "content_len": 187,
+    "preview": "Title: \n\nURL Source: https://www.iesdouyin.com/share/video/7628940941864324394/\n\nWarning: This page maybe not yet fully loaded, consider explicitly specify a timeout.\n\nMarkdown Content:\n\n",
+    "success": true
+  },
+  {
+    "test": "xhs_profile",
+    "status": 200,
+    "time": 8.6,
+    "content_len": 577,
+    "preview": "Title: 小红书 - 你的生活兴趣社区\n\nURL Source: https://www.xiaohongshu.com/user/profile/64e95bd60000000001005b74\n\nMarkdown Content:\n登录后推荐更懂你的笔记\n\n![Image 1](blob:http://localhost/b8b908dcb57749df1f092bf574ca6475)\n\n![Image 2](blob:http://localhost/af1fd3c41a29e8c343a5f1393be73529)\n\n可用\n\n小红书\n\n或\n\n微信\n\n扫码\n\n小红书如何扫码\n\n手机号登录\n\n+86 获取验证码 \n\n我已阅读并同意 [《用户协议》](https://agree.xiaohongshu.com/h5/terms/ZXXY20220331001/-1)[《隐私政策》](https://agree.xiaohongshu.com/h5/terms/ZXXY20220509001/-1)[《儿童/青少年个人信息保护规则》](https://oa.xiaohongshu",
+    "success": true
+  }
+]

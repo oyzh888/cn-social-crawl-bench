@@ -1,0 +1,156 @@
+{
+  "library": "f2",
+  "version": "0.0.1.7",
+  "license": "Apache-2.0",
+  "method": "pure HTTP (no browser)",
+  "tests": [
+    {
+      "test": "short_link_resolution",
+      "input_url": "https://v.douyin.com/i2wyU53P/",
+      "success": true,
+      "aweme_id": null,
+      "sec_user_id": "MS4wLjABAAAAEc8EKgWVEpEQoDRRp8_M53psgc-BoKqre-jICyt6aBA",
+      "resolved_type": "user_profile",
+      "error": null,
+      "time_seconds": 5.883,
+      "error_aweme": "未在响应的地址中找到aweme_id，当前链接暂时不支持。类名：AwemeIdFetcher",
+      "direct_url_test": {
+        "url": "https://www.douyin.com/video/7628940941864324394",
+        "aweme_id": "7628940941864324394",
+        "success": true
+      }
+    },
+    {
+      "test": "video_metadata",
+      "aweme_id": "7628940941864324394",
+      "success": true,
+      "metadata": {
+        "aweme_id": "7628940941864324394",
+        "aweme_type": 0,
+        "desc": "你的ViT一直用背景在分类_LaSt_ViT_CVPR26__本期论文精读_带你看懂_CVPR_2026_最颠覆的工作之一__LaSt_ViT__它不仅发现了视觉问题的本质_而且只用一招就根治全监督_文本监督_自监督三大范式通病_让_ViT_真正__看懂前景___#AI新星计划_#Transformer_#大模型_#CVPR_#计算机视觉",
+        "desc_raw": "你的ViT一直用背景在分类！LaSt-ViT【CVPR26】 本期论文精读，带你看懂 CVPR 2026 最颠覆的工作之一——LaSt‑ViT。\n它不仅发现了视觉问题的本质，而且只用一招就根治全监督、文本监督、自监督三大范式通病，让 ViT 真正 “看懂前景”！\n#AI新星计划 #Transformer #大模型 #CVPR #计算机视觉",
+        "create_time": "2026-04-16 20-10-00",
+        "duration": 459222,
+        "media_type": 4,
+        "nickname": "Lau博士的云组会",
+        "nickname_raw": "Lau博士的云组会",
+        "sec_user_id": "MS4wLjABAAAAFP6NCGWZ53fplqUqCvrCgM6pMnF3vdfeBqsoArVRRBg",
+        "uid": "18019632029856",
+        "unique_id": "36216723020",
+        "short_id": "36216723020",
+        "digg_count": 7260,
+        "comment_count": 106,
+        "collect_count": 3928,
+        "share_count": 1696,
+        "play_count": "ERROR: 'PostDetailFilter' object has no attribute 'play_count'",
+        "admire_count": 0,
+        "video_play_addr": "['https://v5-dy-o-abtest.zjcdn.com/38d09cf806ab1e4e46988e0d282be85d/69e8056f/video/tos/cn/tos-cn-ve-15/osig1jx07A3iA4FQi9j77e4BNVgfEyTCAYIgIB/?a=6383&ch=26&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C3&cv=1&br=625&bt=625&cs=2&ds=10&ft=CZdgCYlIDyjNj0VQ9w6d1sShd.5cR8j03-ApQX&mime_type=video_mp4&qs=15&rc=NjgzZjU6ZzczaTNnNWdmZkBpM3JoO3c5cjVxOjMzNGkzM0BfLzMxY2FjXjMxYDU2X2M1YSMxMm5gMmRzLWNhLS1kLWFzcw%3D%3D&btag=c0000e00030000&cquery=100K_100o_100w_100B_100H&dy_q=1776802164&feature_id=e297886ea4c3239306bb1d52ed307...[truncated]",
+        "cover": "https://p3-pc-sign.douyinpic.com/tos-cn-p-0015/oYm9DEgnQxpAFgAWQBfqwNFQG3QwcAf36WAkAL~tplv-dy-360p.jpeg?lk3s=138a59ce&x-expires=1778011200&x-signature=FkfKRc%2BYRaiONYuWB5jWFC8eUJ4%3D&from=327834062&s=PackSourceEnum_AWEME_DETAIL&se=false&sc=origin_cover&biz_tag=pcweb_cover&l=20260422040924D48FD1F55EFA371BEF2B",
+        "animated_cover": null,
+        "music_author": "Lau博士的云组会",
+        "music_id": 7628941085993208602,
+        "music_play_url": "https://sf6-cdn-tos.douyinstatic.com/obj/ies-music/7628941129152744202.mp3",
+        "music_duration": 459,
+        "is_ads": false,
+        "is_top": 0,
+        "is_delete": false,
+        "is_prohibited": false,
+        "can_comment": true,
+        "can_forward": true,
+        "can_share": true,
+        "mix_id": "7542008678845515827",
+        "mix_name": "前沿论文精读",
+        "hashtag_names": "[\"AI新星计划\", \"Transformer\", \"大模型\", \"CVPR\", \"计算机视觉\"]",
+        "region": "",
+        "position": null
+      },
+      "error": null,
+      "time_seconds": 2.252,
+      "abogus_used": true,
+      "encryption_type": "ab"
+    },
+    {
+      "test": "user_profile",
+      "sec_user_id": "MS4wLjABAAAAEc8EKgWVEpEQoDRRp8_M53psgc-BoKqre-jICyt6aBA",
+      "success": true,
+      "profile": {
+        "nickname": "松月",
+        "nickname_raw": "松月",
+        "uid": "92438930576",
+        "sec_user_id": "MS4wLjABAAAAEc8EKgWVEpEQoDRRp8_M53psgc-BoKqre-jICyt6aBA",
+        "unique_id": "songyue1214",
+        "short_id": "0",
+        "signature": "_松月月__5_4_5上海欢乐谷_合私信__3444587502_qq_com_接文旅__未经允许_禁止转载_不玩外网别被骗___同名___L松月",
+        "signature_raw": "@松月月 \n5.4-5上海欢乐谷\n合私信/📮3444587502@qq.com（接文旅）\n未经允许，禁止转载（不玩外网别被骗）\n🍠同名 \n🧣L松月",
+        "avatar_url": "https://p3-pc.douyinpic.com/aweme/1080x1080/aweme-avatar/tos-cn-avt-0015_f4659a385314554931729922e210a1ab.jpeg?from=2956013662",
+        "gender": 0,
+        "city": "",
+        "country": "",
+        "ip_location": "IP属地：四川",
+        "aweme_count": 877,
+        "follower_count": 2610108,
+        "following_count": 534,
+        "total_favorited": 77519758,
+        "favoriting_count": 0,
+        "is_ban": false,
+        "is_star": false,
+        "live_status": 0,
+        "school_name": null,
+        "user_age": -1
+      },
+      "error": null,
+      "time_seconds": 2.213
+    }
+  ],
+  "summary": {
+    "tests_passed": 3,
+    "tests_total": 3,
+    "total_time_seconds": 10.348,
+    "abogus_works": true,
+    "short_link_resolution_works": true,
+    "video_metadata_works": true,
+    "user_profile_works": true
+  },
+  "capabilities": {
+    "video_info": [
+      "aweme_id",
+      "title/desc",
+      "create_time",
+      "duration",
+      "media_type"
+    ],
+    "author_info": [
+      "nickname",
+      "uid",
+      "sec_user_id",
+      "unique_id"
+    ],
+    "stats": [
+      "likes(digg_count)",
+      "comments",
+      "shares",
+      "plays",
+      "collects",
+      "admires"
+    ],
+    "media_urls": [
+      "video_play_addr",
+      "cover",
+      "animated_cover",
+      "music_play_url"
+    ],
+    "music_info": [
+      "music_id",
+      "music_author",
+      "music_duration"
+    ],
+    "other": [
+      "hashtags",
+      "region",
+      "mix_info",
+      "permissions(can_comment/share/forward)"
+    ],
+    "has_video_url": true,
+    "has_cover_url": true
+  }
+}

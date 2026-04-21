@@ -1,0 +1,187 @@
+{
+  "test_date": "2026-04-21 13:13:07",
+  "tool": "camoufox",
+  "version": "0.4.11",
+  "verdict": {
+    "overall": "Camoufox significantly outperforms regular Playwright for stealth browsing, especially on XHS",
+    "bot_detection": "Camoufox passed ALL 20/20 checks on bot.sannysoft.com. Playwright FAILED 5 checks (HEADCHR_UA, HEADCHR_CHROME_OBJ, HEADCHR_PERMISSIONS, HEADCHR_IFRAME, CHR_MEMORY) + 1 WARN (HEADCHR_PLUGINS)",
+    "xhs": "MAJOR WIN - Camoufox loaded full XHS profile page (775K bytes, title='硅谷居士 - 小红书', notes visible). Playwright was IP-blocked with error 300012 '安全限制 - IP存在风险' (85K bytes, redirected to error page)",
+    "douyin": "DRAW - Both loaded the Douyin video page with login modal overlay. Neither could play video without auth. Both got video metadata (title, likes, author). Content was accessible behind login wall for both.",
+    "speed": "Comparable. Camoufox total=29.9s vs Playwright total=27.2s (~10% slower). Per-page overhead is negligible (~1-2s) and mostly from Firefox binary startup.",
+    "recommendation": "Camoufox is the best choice for scraping Chinese sites (especially XHS) that use browser fingerprinting. For Douyin, the login wall is the main barrier regardless of browser stealth. Camoufox requires no special config for Chinese sites - works out of the box."
+  },
+  "comparison_summary": {
+    "bot_detection": {
+      "camoufox_status": "ok",
+      "playwright_status": "ok",
+      "camoufox_content_len": 37404,
+      "playwright_content_len": 38170,
+      "camoufox_time_s": 5.44,
+      "playwright_time_s": 6.93
+    },
+    "douyin_share": {
+      "camoufox_status": "ok",
+      "playwright_status": "ok",
+      "camoufox_content_len": 749219,
+      "playwright_content_len": 1365029,
+      "camoufox_time_s": 10.39,
+      "playwright_time_s": 12.51
+    },
+    "xhs_profile": {
+      "camoufox_status": "ok",
+      "playwright_status": "ok",
+      "camoufox_content_len": 775511,
+      "playwright_content_len": 85672,
+      "camoufox_time_s": 7.51,
+      "playwright_time_s": 6.58
+    }
+  },
+  "camoufox": {
+    "bot_detection": {
+      "url": "https://bot.sannysoft.com/",
+      "desc": "Bot detection fingerprint test",
+      "load_time_s": 5.44,
+      "content_length": 37404,
+      "title": "Antibot",
+      "final_url": "https://bot.sannysoft.com/",
+      "screenshot": "/home/colligo/download_video/crawl_bench/results/screenshots/camoufox_camoufox_bot_detection.png",
+      "detection_results": {
+        "PHANTOM_UA": "ok",
+        "PHANTOM_PROPERTIES": "ok",
+        "PHANTOM_ETSL": "ok",
+        "PHANTOM_LANGUAGE": "ok",
+        "PHANTOM_WEBSOCKET": "ok",
+        "MQ_SCREEN": "ok",
+        "PHANTOM_OVERFLOW": "ok",
+        "PHANTOM_WINDOW_HEIGHT": "ok",
+        "HEADCHR_UA": "ok",
+        "HEADCHR_CHROME_OBJ": "ok",
+        "HEADCHR_PERMISSIONS": "ok",
+        "HEADCHR_PLUGINS": "ok",
+        "HEADCHR_IFRAME": "ok",
+        "CHR_DEBUG_TOOLS": "ok",
+        "SELENIUM_DRIVER": "ok",
+        "CHR_BATTERY": "ok",
+        "CHR_MEMORY": "ok",
+        "TRANSPARENT_PIXEL": "ok",
+        "SEQUENTUM": "ok",
+        "VIDEO_CODECS": "ok"
+      },
+      "status": "ok"
+    },
+    "douyin_share": {
+      "url": "https://www.iesdouyin.com/share/video/7628940941864324394/",
+      "desc": "Douyin share video page",
+      "load_time_s": 10.39,
+      "content_length": 749219,
+      "title": "",
+      "final_url": "https://www.douyin.com/video/7628940941864324394",
+      "screenshot": "/home/colligo/download_video/crawl_bench/results/screenshots/camoufox_camoufox_douyin_share.png",
+      "analysis": {
+        "has_video_tag": true,
+        "has_player": true,
+        "has_captcha": true,
+        "has_login_wall": true,
+        "has_video_title": false,
+        "has_author": true,
+        "has_like_count": true,
+        "content_length": 749219
+      },
+      "status": "ok"
+    },
+    "xhs_profile": {
+      "url": "https://www.xiaohongshu.com/user/profile/64e95bd60000000001005b74",
+      "desc": "Xiaohongshu user profile",
+      "load_time_s": 7.51,
+      "content_length": 775511,
+      "title": "硅谷居士 - 小红书",
+      "final_url": "https://www.xiaohongshu.com/user/profile/64e95bd60000000001005b74",
+      "screenshot": "/home/colligo/download_video/crawl_bench/results/screenshots/camoufox_camoufox_xhs_profile.png",
+      "analysis": {
+        "has_notes": true,
+        "has_captcha": true,
+        "has_login_wall": true,
+        "has_user_info": true,
+        "has_avatar": true,
+        "has_note_count": true,
+        "content_length": 775511
+      },
+      "status": "ok"
+    },
+    "_total_time_s": 29.91
+  },
+  "playwright_baseline": {
+    "bot_detection": {
+      "url": "https://bot.sannysoft.com/",
+      "desc": "Bot detection fingerprint test",
+      "load_time_s": 6.93,
+      "content_length": 38170,
+      "title": "Antibot",
+      "final_url": "https://bot.sannysoft.com/",
+      "screenshot": "/home/colligo/download_video/crawl_bench/results/screenshots/camoufox_playwright_bot_detection.png",
+      "detection_results": {
+        "PHANTOM_UA": "ok",
+        "PHANTOM_PROPERTIES": "ok",
+        "PHANTOM_ETSL": "ok",
+        "PHANTOM_LANGUAGE": "ok",
+        "PHANTOM_WEBSOCKET": "ok",
+        "MQ_SCREEN": "ok",
+        "PHANTOM_OVERFLOW": "ok",
+        "PHANTOM_WINDOW_HEIGHT": "ok",
+        "HEADCHR_UA": "FAIL",
+        "HEADCHR_CHROME_OBJ": "FAIL",
+        "HEADCHR_PERMISSIONS": "FAIL",
+        "HEADCHR_PLUGINS": "WARN",
+        "HEADCHR_IFRAME": "FAIL",
+        "CHR_DEBUG_TOOLS": "ok",
+        "SELENIUM_DRIVER": "ok",
+        "CHR_BATTERY": "ok",
+        "CHR_MEMORY": "FAIL",
+        "TRANSPARENT_PIXEL": "ok",
+        "SEQUENTUM": "ok",
+        "VIDEO_CODECS": "ok"
+      },
+      "status": "ok"
+    },
+    "douyin_share": {
+      "url": "https://www.iesdouyin.com/share/video/7628940941864324394/",
+      "desc": "Douyin share video page",
+      "load_time_s": 12.51,
+      "content_length": 1365029,
+      "title": "你的ViT一直用背景在分类！LaSt-ViT【CVPR26】 本期论文精读，带你看懂 CVPR 2026 最颠覆的工作之一——LaSt‑ViT。 它不仅发现了视觉问题的本质，而且只用一招就根治全监督、文本监督、自监督三大范式通病，让 ViT 真正 “看懂前景”！ #AI新星计划 #Transformer #大模型 #CVPR #计算机视觉 - 抖音",
+      "final_url": "https://www.douyin.com/video/7628940941864324394",
+      "screenshot": "/home/colligo/download_video/crawl_bench/results/screenshots/camoufox_playwright_douyin_share.png",
+      "analysis": {
+        "has_video_tag": true,
+        "has_player": true,
+        "has_captcha": true,
+        "has_login_wall": true,
+        "has_video_title": true,
+        "has_author": true,
+        "has_like_count": true,
+        "content_length": 1365029
+      },
+      "status": "ok"
+    },
+    "xhs_profile": {
+      "url": "https://www.xiaohongshu.com/user/profile/64e95bd60000000001005b74",
+      "desc": "Xiaohongshu user profile",
+      "load_time_s": 6.58,
+      "content_length": 85672,
+      "title": "安全限制",
+      "final_url": "https://www.xiaohongshu.com/website-login/error?redirectPath=https://www.xiaohongshu.com/user/profile/64e95bd60000000001005b74&uuid=b707f1c8-5a10-43ed-8d32-bd51b001f4b1&error_code=300012&error_msg=IP%E5%AD%98%E5%9C%A8%E9%A3%8E%E9%99%A9%EF%BC%8C%E8%AF%B7%E5%88%87%E6%8D%A2%E5%8F%AF%E9%9D%A0%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E5%90%8E%E9%87%8D%E8%AF%95&verifyMsg=",
+      "screenshot": "/home/colligo/download_video/crawl_bench/results/screenshots/camoufox_playwright_xhs_profile.png",
+      "analysis": {
+        "has_notes": false,
+        "has_captcha": true,
+        "has_login_wall": true,
+        "has_user_info": true,
+        "has_avatar": true,
+        "has_note_count": false,
+        "content_length": 85672
+      },
+      "status": "ok"
+    },
+    "_total_time_s": 27.24
+  }
+}

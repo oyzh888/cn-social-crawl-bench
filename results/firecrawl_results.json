@@ -1,0 +1,70 @@
+[
+  {
+    "approach": "api_no_auth",
+    "test": "douyin_short",
+    "url": "https://v.douyin.com/i2wyU53P/",
+    "status_code": 401,
+    "time_sec": 0.2,
+    "response_preview": "{\"success\":false,\"error\":\"Unauthorized\"}",
+    "success": false
+  },
+  {
+    "approach": "api_no_auth",
+    "test": "xhs_profile",
+    "url": "https://www.xiaohongshu.com/user/profile/64e95bd60000000001005b74",
+    "status_code": 401,
+    "time_sec": 0.2,
+    "response_preview": "{\"success\":false,\"error\":\"Unauthorized\"}",
+    "success": false
+  },
+  {
+    "approach": "api_dummy_key",
+    "test": "douyin_short",
+    "url": "https://v.douyin.com/i2wyU53P/",
+    "status_code": 401,
+    "time_sec": 0.2,
+    "response_preview": "{\"success\":false,\"error\":\"Unauthorized: Invalid token\"}",
+    "success": false
+  },
+  {
+    "approach": "api_dummy_key",
+    "test": "xhs_profile",
+    "url": "https://www.xiaohongshu.com/user/profile/64e95bd60000000001005b74",
+    "status_code": 401,
+    "time_sec": 0.2,
+    "response_preview": "{\"success\":false,\"error\":\"Unauthorized: Invalid token\"}",
+    "success": false
+  },
+  {
+    "approach": "sdk_no_key",
+    "test": "douyin_short",
+    "url": "https://v.douyin.com/i2wyU53P/",
+    "error": "Unauthorized: Failed to scrape. Unauthorized: Invalid token - No additional error details provided.",
+    "time_sec": 0.2,
+    "success": false
+  },
+  {
+    "approach": "sdk_no_key",
+    "test": "xhs_profile",
+    "url": "https://www.xiaohongshu.com/user/profile/64e95bd60000000001005b74",
+    "error": "Unauthorized: Failed to scrape. Unauthorized: Invalid token - No additional error details provided.",
+    "time_sec": 0.2,
+    "success": false
+  },
+  {
+    "approach": "free_endpoint",
+    "test": "v0_scrape",
+    "status_code": 401,
+    "time_sec": 0.2,
+    "response_preview": "{\"error\":\"Unauthorized\"}",
+    "success": false
+  },
+  {
+    "approach": "free_endpoint",
+    "test": "health",
+    "status_code": 404,
+    "time_sec": 0.2,
+    "response_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /v1/</pre>\n</body>\n</html>\n",
+    "success": false
+  }
+]

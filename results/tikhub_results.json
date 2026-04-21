@@ -1,0 +1,224 @@
+{
+  "service": "TikHub.io",
+  "api_base": "https://api.tikhub.io",
+  "api_base_china": "https://api.tikhub.dev",
+  "version": "V5.3.2",
+  "test_date": "2026-04-21",
+  "summary": {
+    "works_without_key": "PARTIALLY - Demo endpoints work without API key, production endpoints require auth",
+    "free_tier": "~50 free requests on new account (no credit card required)",
+    "pricing_model": "Pay-as-you-go, $0.001-$0.01 per request depending on endpoint",
+    "volume_discounts": "Up to 50%, calculated daily based on total usage, applied automatically",
+    "payment_methods": [
+      "Alipay",
+      "PayPal",
+      "Crypto (USDT, BTC, ETH)"
+    ],
+    "enterprise": "Min $3,000 one-time or $4,500 cumulative spend for enterprise tier",
+    "rate_limit": "QPS: 10/second (default), higher with RPS plans",
+    "sdk": "tikhub PyPI package (v2.1.1), supports sync and async clients",
+    "api_quality": "EXCELLENT - 146 fields per Douyin video, includes video URLs, stats, author info, music, etc."
+  },
+  "platforms_supported": {
+    "douyin": {
+      "endpoints": 290,
+      "demo_available": true,
+      "demo_works": true
+    },
+    "tiktok": {
+      "endpoints": 206,
+      "demo_available": true,
+      "demo_works": true
+    },
+    "instagram": {
+      "endpoints": 88,
+      "demo_available": true,
+      "demo_works": false,
+      "note": "Demo temporarily unavailable"
+    },
+    "xiaohongshu": {
+      "endpoints": 78,
+      "demo_available": false
+    },
+    "weibo": {
+      "endpoints": 64,
+      "demo_available": false
+    },
+    "youtube": {
+      "endpoints": 44,
+      "demo_available": false
+    },
+    "bilibili": {
+      "endpoints": 41,
+      "demo_available": false
+    },
+    "zhihu": {
+      "endpoints": 34,
+      "demo_available": false
+    },
+    "kuaishou": {
+      "endpoints": 33,
+      "demo_available": true,
+      "demo_works": true
+    },
+    "linkedin": {
+      "endpoints": 25,
+      "demo_available": false
+    },
+    "reddit": {
+      "endpoints": 24,
+      "demo_available": false
+    },
+    "pipixia": {
+      "endpoints": 17,
+      "demo_available": false
+    },
+    "sora2": {
+      "endpoints": 17,
+      "demo_available": false
+    },
+    "lemon8": {
+      "endpoints": 16,
+      "demo_available": false
+    },
+    "twitter": {
+      "endpoints": 13,
+      "demo_available": false
+    },
+    "threads": {
+      "endpoints": 11,
+      "demo_available": false
+    },
+    "wechat_mp": {
+      "endpoints": 10,
+      "demo_available": true,
+      "demo_works": true
+    },
+    "wechat_channels": {
+      "endpoints": 10,
+      "demo_available": false
+    },
+    "xigua": {
+      "endpoints": 7,
+      "demo_available": false
+    },
+    "toutiao": {
+      "endpoints": 7,
+      "demo_available": false
+    },
+    "temp_mail": {
+      "endpoints": 3,
+      "demo_available": false
+    }
+  },
+  "total_endpoints": 1058,
+  "demo_endpoints": {
+    "description": "Free demo endpoints that work WITHOUT API key",
+    "endpoints": [
+      "/api/v1/demo/douyin/web/fetch_one_video",
+      "/api/v1/demo/douyin/app/fetch_one_video",
+      "/api/v1/demo/douyin_search/app/general_search",
+      "/api/v1/demo/kuaishou/web/fetch_one_video",
+      "/api/v1/demo/tiktok/web/fetch_user_profile",
+      "/api/v1/demo/tiktok/app/fetch_one_video",
+      "/api/v1/demo/instagram/web/fetch_user_info",
+      "/api/v1/demo/wechat/article_extract",
+      "/api/v1/demo/demo/cache_status"
+    ],
+    "test_results": {
+      "douyin_web": {
+        "status": 200,
+        "time_s": 5.8,
+        "data_quality": "Excellent - 146 fields, video URLs, stats, author"
+      },
+      "douyin_app": {
+        "status": 200,
+        "time_s": 1.0,
+        "data_quality": "Excellent"
+      },
+      "douyin_search": {
+        "status": 200,
+        "time_s": 7.9,
+        "data_quality": "Good - returns search results"
+      },
+      "kuaishou": {
+        "status": 200,
+        "time_s": 2.4,
+        "data_quality": "Good"
+      },
+      "tiktok_profile": {
+        "status": 200,
+        "time_s": 0.8,
+        "data_quality": "Good"
+      },
+      "tiktok_app": {
+        "status": 200,
+        "time_s": 0.5,
+        "data_quality": "Good"
+      },
+      "instagram": {
+        "status": 400,
+        "note": "Demo temporarily unavailable"
+      },
+      "wechat_article": {
+        "status": 200,
+        "time_s": 5.1,
+        "data_quality": "Good"
+      }
+    }
+  },
+  "data_quality_sample": {
+    "platform": "douyin",
+    "endpoint": "/api/v1/demo/douyin/web/fetch_one_video",
+    "aweme_id_tested": "7628940941864324394",
+    "returned_aweme_id": "7534641277405531446",
+    "fields_returned": 146,
+    "key_data": {
+      "desc": "当我用《地球脉动》的视角记录下了MC的绝美风景... #我的世界 #游戏风景 #我的世界光影 #地球脉动 #青年创作者成长计划 视频灵感原创：@Ye CUT",
+      "author": "Richard29",
+      "statistics": {
+        "admire_count": 7,
+        "aweme_id": "7534641277405531446",
+        "collect_count": 30343,
+        "comment_count": 2401,
+        "digg_count": 252108,
+        "play_count": 0,
+        "recommend_count": 35947,
+        "share_count": 42825
+      },
+      "has_video_urls": true,
+      "has_download_urls": true,
+      "video_url_count": 3
+    }
+  },
+  "pricing_details": {
+    "free_tier": "~50 free requests for new accounts, no credit card needed",
+    "pay_as_you_go": "$0.001 - $0.01 per request depending on endpoint",
+    "volume_discounts": "Up to 50% discount, calculated daily, applied automatically",
+    "rps_plans": "Separate plans to increase requests-per-second rate limit",
+    "enterprise": {
+      "minimum_spend": "$3,000 one-time or $4,500 cumulative",
+      "benefits": "Permanent fee waivers, bonus credits, custom endpoints, dedicated support"
+    },
+    "faq": [
+      "Single API key works across all 16 platforms and 1000+ endpoints",
+      "No separate subscriptions per platform",
+      "Datasets available for purchase (select format, date range, pay in full)"
+    ]
+  },
+  "useful_links": {
+    "docs": "https://docs.tikhub.io",
+    "swagger": "https://api.tikhub.io/docs",
+    "playground": "https://app.apifox.com/project/4705614",
+    "github": "https://github.com/TikHub",
+    "sdk_v2": "https://github.com/TikHub/TikHub-API-Python-SDK-V2",
+    "discord": "https://discord.gg/aMEAS8Xsvz",
+    "status_monitor": "https://monitor.tikhub.io",
+    "downloader": "https://github.com/TikHub/TikHub-Multi-Functional-Downloader"
+  },
+  "auth_without_key": {
+    "production_endpoints": "401 - API token required in Header or Cookie",
+    "demo_endpoints": "200 - Work without authentication",
+    "docs_reference": "https://docs.tikhub.io/4592766m0#api-token-introduction"
+  }
+}
