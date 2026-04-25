@@ -1,0 +1,129 @@
+{
+  "test_date": "2026-04-24 23:27:21",
+  "host": "pluto-prod (AWS, US IP)",
+  "results": [
+    {
+      "tool": "urllib",
+      "target": "微信公众号 - 微软买断",
+      "status": "NO_KEYWORD",
+      "content_length": 9193,
+      "time_seconds": 2.73,
+      "snippet": "try{var ua=navigator.userAgent;if(!/Android/i.test(ua)&&!/Harmony/i.test(ua)){document.getElementsByTagName('html').item(0).style.webkitTextSizeAdjust=JSON.parse(window.__wxWebEnv.getEnv()).fontScale+",
+      "error": ""
+    },
+    {
+      "tool": "urllib",
+      "target": "GitHub Pages - PhD Homepage",
+      "status": "OK",
+      "content_length": 7765,
+      "time_seconds": 0.12,
+      "snippet": "Hansi Zeng — UMass Amherst :root { --bg: #ffffff; --text: #1a1a1a; --muted: #555; --link: #1a5fb4; --link-hover: #134894; --border: #ddd; --venue: #1a5fb4; } :root.dark { --bg: #0d1117; --text: #c9d1d",
+      "error": ""
+    },
+    {
+      "tool": "urllib",
+      "target": "TechCrunch - News Article",
+      "status": "OK",
+      "content_length": 15656,
+      "time_seconds": 0.09,
+      "snippet": "(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement); const successData = localStorage.getItem('turnstile_verified'); const failData = sessionStorage.g",
+      "error": ""
+    },
+    {
+      "tool": "urllib",
+      "target": "Google DeepMind RS Homepage",
+      "status": "OK",
+      "content_length": 7541,
+      "time_seconds": 0.15,
+      "snippet": "@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300); /* Color scheme stolen from Sergey Karayev */ a { /*color: #b60a1c;*/",
+      "error": ""
+    },
+    {
+      "tool": "crawl4ai",
+      "target": "微信公众号 - 微软买断",
+      "status": "NO_KEYWORD",
+      "content_length": 86,
+      "time_seconds": 4.22,
+      "snippet": "## 环境异常\n当前环境异常，完成验证后即可继续访问。\n去验证\n:  ， . Video Mini Program Like ，轻点两下取消赞 Wow ，轻点两下取消在看\n",
+      "error": ""
+    },
+    {
+      "tool": "crawl4ai",
+      "target": "GitHub Pages - PhD Homepage",
+      "status": "OK",
+      "content_length": 5913,
+      "time_seconds": 0.95,
+      "snippet": "Toggle theme ![Portrait of Hansi Zeng](https://hansizeng.github.io/images/hansizeng.png)\n# Hansi Zeng 曾翰偲\nPhD Student · Computer Science · UMass Amherst\nEmail [CV](https://hansizeng.github.io/files/hz",
+      "error": ""
+    },
+    {
+      "tool": "crawl4ai",
+      "target": "TechCrunch - News Article",
+      "status": "OK",
+      "content_length": 13323,
+      "time_seconds": 1.17,
+      "snippet": "[Skip to content](https://techcrunch.com/2026/04/23/microsoft-offers-buyout-for-up-to-7-of-u-s-employees/#wp--skip-link--target)\n–:–:–:– \nThe first StrictlyVC of 2026 hits SF on April 30. Tickets are ",
+      "error": ""
+    },
+    {
+      "tool": "crawl4ai",
+      "target": "Google DeepMind RS Homepage",
+      "status": "OK",
+      "content_length": 57237,
+      "time_seconds": 1.41,
+      "snippet": "|   \n |  Songyou Peng (彭崧猷) I am a Research Scientist at [**Google DeepMind**](https://deepmind.google/) in San Francisco, USA, where I teach [Gemini](https://gemini.google.com) and [Nano Banana](http",
+      "error": ""
+    },
+    {
+      "tool": "playwright+stealth",
+      "target": "微信公众号 - 微软买断",
+      "status": "OK",
+      "content_length": 988,
+      "time_seconds": 11.75,
+      "snippet": "4月23日媒体报道，微软将向部分美国员工提供自愿买断方案，这是其成立51年来首次实施此类大规模方案，在美国科技行业也属于首次。\n\n据一位知情人士透露，约有7%的美国员工符合资格。\n\n这项一次性退休计划于周四宣布，将面向美国高级总监及以下级别的员工，适用核心条件为员工年龄与工龄之和达到或超过70年。\n\n比如，微软一名员工今年50岁，已经在微软工作20年，既符合条件。\n\n符合条件的员工及其经理将于5月",
+      "error": ""
+    },
+    {
+      "tool": "playwright+stealth",
+      "target": "GitHub Pages - PhD Homepage",
+      "status": "OK",
+      "content_length": 3774,
+      "time_seconds": 3.07,
+      "snippet": "Toggle theme\nHansi Zeng 曾翰偲\nPhD Student · Computer Science · UMass Amherst\nEmail\nCV\nGoogle Scholar\nGitHub\nLinkedIn\nAbout\n\nI am a final‑year PhD student in Computer Science at the University of Massach",
+      "error": ""
+    },
+    {
+      "tool": "playwright+stealth",
+      "target": "TechCrunch - News Article",
+      "status": "FAIL",
+      "content_length": 0,
+      "time_seconds": 30.54,
+      "snippet": "",
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://techcrunch.com/2026/04/23/microsoft-offers-buyout-for-up-to-7-of-u-s-employees/\", waiting until \"networkidle\"\n"
+    },
+    {
+      "tool": "playwright+stealth",
+      "target": "Google DeepMind RS Homepage",
+      "status": "OK",
+      "content_length": 13527,
+      "time_seconds": 4.01,
+      "snippet": "Songyou Peng (彭崧猷)\n\nI am a Research Scientist at Google DeepMind in San Francisco, USA, where I teach Gemini and Nano Banana multimodal understanding and generation.\n\nI received my PhD from ETH Zurich",
+      "error": ""
+    },
+    {
+      "tool": "ddg_search",
+      "target": "Web Search",
+      "status": "OK",
+      "content_length": 10,
+      "time_seconds": 0.96,
+      "snippet": "Found 10 results. Top: Microsoft plans first voluntary retirement program for US employees - CNBC",
+      "error": ""
+    }
+  ],
+  "summary": {
+    "total_tests": 13,
+    "ok": 10,
+    "fail": 1,
+    "no_keyword": 2
+  }
+}
